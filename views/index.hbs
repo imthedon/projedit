@@ -1,0 +1,175 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h4> eDow-Learn </h4>
+        <ul>
+            <li> <a href="/"> Home </a></li>
+            <li> <a href="/login"> Login </a></li>
+            <li> <a href="/register"> Register </a></li>
+        </ul>
+    </nav>
+
+        <div class="container mt-4"> 
+            <div class="jumbotron">
+                <h1 class="display-4">Sign up now!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+</html>
+ --}}
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MESS COUNT TRACKER</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="    background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.705)), url('/back.png');
+width: 100%;
+min-height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+
+">
+  
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><ion-icon name="menu-outline"></ion-icon></label>
+
+        
+            <img class="logo" src="/newlogo.png" alt=""> 
+           <div class="navbar">
+                <a id="home" href="/">Home</a>
+                <a href="./about">About Us</a>
+                
+                <a href="/login">Login</a>
+                <a href="/contact">Contact</a>
+                   <a href="/register">REGISTER</a>
+                
+
+                {{!-- <button class="login-but">Login</button> --}}
+                <!-- <button class="reg-but">Register</button> -->
+           </div>  
+    </nav>
+
+    
+{{!-- 
+    <div class="wrapper">
+        <!-- <span class="closeicon"><ion-icon name="close-circle"></ion-icon></span> -->
+       
+        <div class="form-box login">
+            <span>
+                <button class="closeicon" >
+                    <ion-icon name="close-circle"></ion-icon>
+                </button>
+            </span>
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon "><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>  
+                    <div class="input-box">
+                    <span class="icon "><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="forgot-remember">
+                    
+                    <label ><input type="checkbox" >Remember Me</label>
+                    <a href="#">Forgot Password ?</a>
+                </div>
+                <button type="submit" class="btn">LOGIN</button>
+
+                <div class="registerfirst">
+                    <p>Don't have an account? <a href="/register" class="register-link ">Register</a></p>
+                </div>
+                    
+            </form>
+        </div>
+        <div class="form-box register">
+             <span>
+            <button class="closeicon2" >
+                <ion-icon name="close-circle"></ion-icon>
+            </button>
+        </span>
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon "><ion-icon name="person-circle"></ion-icon></ion-icon></span>
+                    <input type="text" required>
+                    <label>Name</label>
+                </div> 
+                <div class="input-box">
+                    <span class="icon "><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>  
+                <div class="input-box">
+                    <span class="icon "><ion-icon name="mail"></ion-icon></span>
+                    <input type="tel" required>
+                    <label>Phone no</label>
+                </div>  
+                <div class="input-box1">
+                    <form action="">
+                        <p>Please select your category</p>
+                      <input type="radio" id="student" name="category" value="student">
+                      <label for="student">Student</label>
+                     <input type="radio" id="mess" name="category" value="mess">
+                     <label for="mess">mess</label><br>
+                     
+                      
+                        
+                      </form>
+                
+                    <!-- <label>Email</label> -->
+                </div>  
+                    <div class="input-box">
+                    <span class="icon "><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="forgot-remember">
+                    
+                    <label ><input type="checkbox" >I agree to the terms & conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">REGISTER</button>
+
+                <div class="registerfirst">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div> --}}
+
+    <script src="./index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
